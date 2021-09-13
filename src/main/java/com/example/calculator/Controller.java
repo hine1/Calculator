@@ -1,14 +1,18 @@
 package com.example.calculator;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 
 public class Controller {
     @FXML
-    private Label welcomeText;
+    private Text output;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private void handleClickedButton(ActionEvent event){
+        String outputText = output.getText() + ((Button)event.getSource()).getText();
+        output.setText(outputText);
     }
+
 }
