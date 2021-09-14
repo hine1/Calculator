@@ -9,6 +9,7 @@ public class Controller {
     @FXML
     private Text output;
 
+    private String operator = "";
 
     @FXML
     private void handleNumberBtn(ActionEvent event){

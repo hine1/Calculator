@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.layout.VBox?>
+
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.StackPane?>
@@ -8,46 +7,39 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.layout.HBox?>
 
-<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.calculator.Controller">
 
     <StackPane alignment="CENTER">
-        <Rectangle width="240" height="50"  fill="TRANSPARENT"/>
+        <Rectangle width="240" height="50"  fill="WHITE"/>
         <Text fx:id="output"/>
     </StackPane>
 
-    <HBox alignment="CENTER">
-        <Button text="AC" prefWidth="120" prefHeight="50" onAction="#handleOperatorBtn"/>
-        <Button text="\%" prefWidth="60" prefHeight="50" onAction="#handleOperatorBtn" />
-        <Button text="÷" prefWidth="60" prefHeight="50" onAction="#handleOperatorBtn" />
-
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="7" prefWidth="50" />
+        <Button text="8" prefWidth="50" />
+        <Button text="9" prefWidth="50" />
+        <Button text="/" prefWidth="50" />
     </HBox>
 
-    <HBox alignment="CENTER">
-        <Button text="7" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="8" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="9" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="x" prefWidth="60" prefHeight="50" onAction="#handleOperatorBtn" />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="4" prefWidth="50" />
+        <Button text="5" prefWidth="50" />
+        <Button text="6" prefWidth="50" />
+        <Button text="*" prefWidth="50" />
     </HBox>
 
-    <HBox alignment="CENTER">
-        <Button text="4" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="5" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="6" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="-" prefWidth="60" prefHeight="50" onAction="#handleOperatorBtn" />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="1" prefWidth="50" />
+        <Button text="2" prefWidth="50" />
+        <Button text="3" prefWidth="50" />
+        <Button text="-" prefWidth="50" />
     </HBox>
 
-    <HBox alignment="CENTER">
-        <Button text="1" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="2" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="3" prefWidth="60" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="+" prefWidth="60" prefHeight="50" onAction="#handleOperatorBtn" />
-    </HBox>
-
-    <HBox alignment="CENTER">
-        <Button text="0" prefWidth="120" prefHeight="50" onAction="#handleNumberBtn" />
-        <Button text="." prefWidth="60" prefHeight="50" onAction="#handleOperatorBtn"  />
-        <Button text="=" prefWidth="60" prefHeight="50" onAction="#handleOperatorBtn"  />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="0" prefWidth="110" />
+        <Button text="=" prefWidth="50"  />
+        <Button text="+" prefWidth="50"  />
     </HBox>
 
 </VBox>
