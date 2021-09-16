@@ -9,10 +9,6 @@ public class Controller {
     @FXML
     private Text output;
 
-<<<<<<< HEAD
-
-
-=======
     private String operator = "";
 
     @FXML
@@ -26,5 +22,6 @@ public class Controller {
 
     }
 
->>>>>>> developer
+
+
 }
