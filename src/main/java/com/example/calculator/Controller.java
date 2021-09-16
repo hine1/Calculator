@@ -9,6 +9,22 @@ public class Controller {
     @FXML
     private Text output;
 
+<<<<<<< HEAD
 
 
+=======
+    private String operator = "";
+
+    @FXML
+    private void handleNumberBtn(ActionEvent event){
+        String outputText = output.getText() + ((Button)event.getSource()).getText();
+        output.setText(outputText);
+    }
+
+    @FXML
+    private void handleOperatorBtn(ActionEvent event){
+
+    }
+
+>>>>>>> developer
 }
