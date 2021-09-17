@@ -10,6 +10,7 @@
 <VBox alignment="CENTER" stylesheets="@styles.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.example.calculator.Controller">
 
 
+<<<<<<< HEAD
     <StackPane alignment="CENTER">
         <Rectangle fill="TRANSPARENT" height="50" width="240" />
         <Text fx:id="output" />
@@ -48,5 +49,10 @@
         <Button prefHeight="50" prefWidth="60" text="." />
         <Button prefHeight="50" prefWidth="60" text="="  styleClass="right-button"/>
     </HBox>
+=======
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.calculator.Controller">
+>>>>>>> developer
 
 </VBox>
